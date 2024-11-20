@@ -1,0 +1,20 @@
+meta {
+  name: UpdateCategory
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/api/categories/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Id": 1,
+    "name": "Change",
+    "description": "Change",
+    "imageUrl": "Change"
+  }
+}

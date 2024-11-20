@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS t_product (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    rating DOUBLE,
+    availability TINYINT(1) DEFAULT 1
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,22 @@
+meta {
+  name: PostProduct
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8081/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "test",
+    "description": "test",
+    "rating": 5,
+    "categoryId": 1,
+    "availability": true
+  }
+}

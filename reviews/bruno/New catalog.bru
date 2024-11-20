@@ -1,0 +1,18 @@
+meta {
+  name: New catalog
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/api/category
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "categoryName":"Cat name 1",
+    "categoryDescription":"Cat descr 1"
+  }
+}
